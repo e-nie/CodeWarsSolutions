@@ -1,0 +1,10 @@
+function arraySum(arr) {
+  console.log(arr);
+  const b = arr.toString().split(',');// array of strings
+  let sum = 0;
+  for (let i = 0; i < b.length; i++){
+    sum += Number.isNaN(Number(b[i])) ? 0 : Number(b[i]);
+    
+  }
+  return sum;
+}
