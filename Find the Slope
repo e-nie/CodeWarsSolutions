@@ -1,0 +1,8 @@
+function slope(points){
+  let a = points[0];
+  let b = points[1];
+  let c = points[2];
+  let d = points[3];
+  
+  return c === a ? "undefined" : String((d-b)/(c-a));
+  }
