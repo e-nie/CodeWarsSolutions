@@ -1,0 +1,29 @@
+function isLucky(n) {
+  return n % 9 === 0;
+}
+
+OR
+
+function isLucky(n) {
+  let sum = 0;
+  n += '';
+  for(let i = 0; i < n.length; i++) {
+    sum+= +n[i];
+  }
+  return sum % 9 === 0;
+}
+
+OR
+
+nction isLucky(n) {
+  let sum = 0;
+  n += '';
+  for(let i = 0; i < n.length; i++) {
+    sum+= +n[i];
+  }
+  if (sum % 9 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
