@@ -1,0 +1,17 @@
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let currMin = args[0];
+    for(let el of args) {
+      if(el < currMin) {
+        currMin = el;
+      }
+    }
+     return currMin;
+  }
+}
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+   return Math.min(...args);
+  }
+}
