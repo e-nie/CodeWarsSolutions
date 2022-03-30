@@ -1,0 +1,21 @@
+function spongeMeme(str) {
+  let res = '';
+  for(let i = 0; i < str.length; i++) {
+    res+= (i % 2) ? str[i].toLowerCase() : str[i].toUpperCase();
+  }
+  return res;
+}
+
+
+function spongeMeme(str) {
+  let res = '';
+  for(let i = 0; i < str.length; i++) {
+    if(i % 2) {
+      res+= str[i].toLowerCase();
+    } else if(i % 2 === 0) {
+      res+= str[i].toUpperCase();
+    }
+    
+  }
+  return res;
+}
