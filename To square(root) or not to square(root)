@@ -1,0 +1,26 @@
+function squareOrSquareRoot(array) {
+  let res = [];
+  for (let i = 0; i < array.length; i++) {
+    if (Number.isInteger(Math.sqrt(array[i]))) {
+      res.push(Math.sqrt(array[i]));
+    } else {
+      res.push(array[i] ** 2);
+    }
+  }
+
+  return res;
+}
+
+
+//OR
+
+
+function squareOrSquareRoot(array) {
+  return array.map(el => {
+   if (Math.sqrt(el) % 1 === 0) {
+     return Math.sqrt(el);
+   }  else {
+     return Math.pow(el,2);
+   } 
+  });  
+}
