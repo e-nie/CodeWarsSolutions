@@ -1,0 +1,6 @@
+function reverse(str){
+ return str.split(' ').map((el, i) => {
+    return i%2 ? el.split('').reverse().join('') : el;
+  })
+  .join(' ').trim();
+}
