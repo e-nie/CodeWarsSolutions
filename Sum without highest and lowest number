@@ -1,0 +1,14 @@
+function sumArray(arr) {
+ if (arr === null || arr === NaN || arr === undefined ) {
+   return 0;
+ }
+
+  let sum = 0;
+  arr.sort((a, b) => a - b)
+    arr.pop();
+    arr.shift();
+  for(let el of arr) {
+    sum+= el;
+  }
+  return sum;
+}
