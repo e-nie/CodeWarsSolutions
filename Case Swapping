@@ -1,0 +1,13 @@
+function swap(str){
+  let str1 = "";
+  for(let el of str) {
+    if(typeof el === 'number' || str === "") {
+       str1+= el;
+    }  else if(el.toLowerCase() === el) {
+      str1+= el.toUpperCase();
+    } else {
+      str1+= el.toLowerCase();
+    }
+  }
+  return str1 ;
+}
