@@ -1,0 +1,11 @@
+function countBy(x, n) {
+  let z = [];
+  let count = n;
+  for(let i = x; count > 0; i +=x) {
+    if(i % x === 0) {
+      z.push(i);
+      count--;
+    }
+  }
+  return z;
+}
