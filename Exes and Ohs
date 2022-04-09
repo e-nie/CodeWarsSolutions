@@ -1,0 +1,11 @@
+function XO(str) {
+  str = str.toLowerCase();
+  let countX = 0;
+  let countO = 0;
+    const arr = str.split('');
+  for(let el of arr) {
+    el === 'x' ? countX+= 1 : 0;
+    el === 'o' ? countO+= 1 : 0;
+  }
+  return countX === countO;
+}
