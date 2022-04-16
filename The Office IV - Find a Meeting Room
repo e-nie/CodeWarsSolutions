@@ -1,0 +1,4 @@
+function meeting(x){
+  let free = x.indexOf('O')
+  return free >= 0 ? free : 'None available!'  ;
+  }
