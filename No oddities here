@@ -1,0 +1,8 @@
+function noOdds( values ){
+  const arr = []
+  for(el of values) {
+    if (el % 2 === 0) {
+      arr.push(el);
+    } 
+  } return arr;
+}
